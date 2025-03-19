@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../Entornos/entornos"
+		},
+		{
+			"path": "../../../../../Programación Orientada a objetos"
+		}
+	],
+	"settings": {
+		"dotnet.defaultSolution": "entornos.sln"
+	}
+}

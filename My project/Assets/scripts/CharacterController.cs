@@ -11,6 +11,7 @@ public class CharacterController : MonoBehaviour
     public float knockbackForce = 5f; // Fuerza con la que el enemigo empuja al jugador
     private bool isGrounded;
     private bool isKnockbackActive = false; // Bandera para controlar el knockback
+    public Collider2D groundCollider; // Collider que detecta el suelo
 
     void Update()
     {
@@ -35,8 +36,7 @@ public class CharacterController : MonoBehaviour
 
     void Jump()
     {
-        // Verificar si el personaje está en el suelo
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        isGrounded = groundCollider.IsTouchingLayers(groundLayer);
 
         // Aplicar fuerza de salto solo si está en el suelo
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
@@ -69,7 +69,7 @@ public class CharacterController : MonoBehaviour
     {
         // Calcular dirección del knockback
         Vector2 knockbackDirection = (transform.position - enemyPosition).normalized;
-        
+
         // Aplicar knockback
         rb.linearVelocity = new Vector2(knockbackDirection.x * knockbackForce, knockbackDirection.y * knockbackForce);
 
