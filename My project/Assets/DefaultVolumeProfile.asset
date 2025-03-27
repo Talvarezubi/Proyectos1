@@ -204,10 +204,10 @@ MonoBehaviour:
   active: 1
   type:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   intensity:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.794
   response:
     m_OverrideState: 1
     m_Value: 0.8
@@ -381,7 +381,7 @@ MonoBehaviour:
     m_Value: 30
   gaussianMaxRadius:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.5
   highQualitySampling:
     m_OverrideState: 1
     m_Value: 0
@@ -390,10 +390,10 @@ MonoBehaviour:
     m_Value: 10
   aperture:
     m_OverrideState: 1
-    m_Value: 5.6
+    m_Value: 28.2
   focalLength:
     m_OverrideState: 1
-    m_Value: 50
+    m_Value: 134.3
   bladeCount:
     m_OverrideState: 1
     m_Value: 5
@@ -603,7 +603,7 @@ MonoBehaviour:
   active: 1
   intensity:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.154
   xMultiplier:
     m_OverrideState: 1
     m_Value: 1
@@ -696,7 +696,7 @@ MonoBehaviour:
     m_Value: 1
   startingPosition:
     m_OverrideState: 1
-    m_Value: 1.25
+    m_Value: 1.429
   scale:
     m_OverrideState: 1
     m_Value: 1.5
@@ -767,7 +767,7 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.294
   smoothness:
     m_OverrideState: 1
     m_Value: 0.2
@@ -789,7 +789,7 @@ MonoBehaviour:
   active: 1
   distance:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.449
   cropToFit:
     m_OverrideState: 1
     m_Value: 1
